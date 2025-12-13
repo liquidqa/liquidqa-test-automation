@@ -8,7 +8,7 @@ export class NavigationPageSelectors {
     this.page = page
   }
 
-  inlineFormHeader(): Locator {
+  inlineFormHeaderLocator(): Locator {
     return this.page.locator('nb-card.inline-form-card nb-card-header');
   }
 
@@ -16,22 +16,19 @@ export class NavigationPageSelectors {
     return this.page.getByText('Forms')
   }
 
-}
-
-
-
-/*
-    import { Page, Locator } from '@playwright/test';
-
-export class NavigationPageSelectors {
-  static getHomeButton(page: Page): Locator {
-    return page.locator('button#home');
+  formsLayoutsLocator(): Locator {
+    return this.page.getByText('Form Layouts')
   }
 
-  // Динамичен локатор със параметър
-  static getUserProfile(page: Page, userId: string): Locator {
-    return page.locator(`div#profile-${userId}`);
+  datePickerLocator(): Locator {
+    return this.page.getByText('Datepicker')
+  }
+
+  modalLocator(): Locator {
+    return this.page.getByText('Modal & Overlays')
+  }
+
+  tooltipLocator(): Locator {
+    return this.page.getByText('Tooltip')
   }
 }
-
-*/
