@@ -3,12 +3,9 @@ import { NavigationPageSelectors } from "./navigationPageSelectors";
 
 export class NavigationPage {
 
-    readonly page: Page
     readonly selectors: NavigationPageSelectors
 
-
     constructor(page: Page) {
-        this.page = page
         this.selectors = new NavigationPageSelectors(page)
     }
 

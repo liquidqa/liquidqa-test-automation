@@ -1,5 +1,5 @@
 import { Page, Locator } from "@playwright/test"
-import { Card } from "../componenets/card"
+import { Card } from "../components/card"
 
 export class FormLayoutsPage {
 

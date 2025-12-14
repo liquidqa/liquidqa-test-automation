@@ -51,5 +51,4 @@ export class NavigationPageSelectors {
   toastrLocator(): Locator {
     return this.page.locator('a[href*="/modal-overlays/toastr"]')
   }
-
 }
