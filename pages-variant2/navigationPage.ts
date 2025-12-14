@@ -26,4 +26,24 @@ export class NavigationPage {
         await this.selectors.modalLocator().click()
         await this.selectors.tooltipLocator().click()
     }
+
+    async goToDialogPage() {
+        await this.selectors.modalLocator().click()
+        await this.selectors.dialogLocator().click()
+    }
+
+    async goToWindowPage() {
+        await this.selectors.modalLocator().click()
+        await this.selectors.windowLocator().click()
+    }
+
+    async goToPopover() {
+        await this.selectors.modalLocator().click()
+        await this.selectors.popoverLocator().click()
+    }
+
+    async goToToastrPage() {
+        await this.selectors.modalLocator().click()
+        await this.selectors.toastrLocator().click()
+    }
 }

@@ -12,16 +12,16 @@ test.afterEach(async ({page}) => {
    //??
 })
 
-test('check Title', async ({page}) => {
+test('Verify Title', async ({page}) => {
    await expect(page).toHaveTitle('playwright-test-admin Demo Application');
 });
 
-test('navigate to Form Layouts page', async({page}) => {
+test('Navigate to Form Layouts page', async({page}) => {
     await navigationPage.goToFormLayoutsPage()
     await expect(navigationPage.inlineFormHeader).toHaveText('Inline form')
 })
 
-test('navigate to Datepicker page', async({page}) => {
+test('Navigate to Datepicker page', async({page}) => {
     await navigationPage.goToDatepickerPage()
 
     const expectedHeaders = ['Common Datepicker', 'Datepicker With Range', 'Datepicker With Disabled Min Max Values']

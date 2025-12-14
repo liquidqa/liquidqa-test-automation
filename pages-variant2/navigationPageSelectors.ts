@@ -12,6 +12,10 @@ export class NavigationPageSelectors {
     return this.page.locator('nb-card.inline-form-card nb-card-header');
   }
 
+  cardHeadersLocator(): Locator {
+    return this.page.locator('nb-card-header')
+  }
+
   formsLocator(): Locator {
     return this.page.getByText('Forms')
   }
@@ -31,4 +35,21 @@ export class NavigationPageSelectors {
   tooltipLocator(): Locator {
     return this.page.getByText('Tooltip')
   }
+
+  dialogLocator(): Locator {
+    return this.page.locator('a[href*="/modal-overlays/dialog"]')
+  }
+
+  windowLocator(): Locator {
+    return this.page.locator('a[href*="/modal-overlays/window"]')
+  }
+
+  popoverLocator(): Locator {
+    return this.page.locator('a[href*="/modal-overlays/popover"]')
+  }
+
+  toastrLocator(): Locator {
+    return this.page.locator('a[href*="/modal-overlays/toastr"]')
+  }
+
 }
